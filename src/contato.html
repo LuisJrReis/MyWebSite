@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Principal</title>
+</head>
+
+<body>
+    <!-- Div principal da dessa "classe" -->
+    <div class="containerContato">
+        <!-- Formulario -->
+        <div class="formulario">
+            <p><b>Contato</b></p>
+            <hr>
+            <!-- Nome do usuário -->
+            <div class="form-group">
+                <label for="nome">Nome </label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome.." required>
+            </div>
+
+            <!-- Email do usuario -->
+            <div class="form-group">
+                <label for="email">Endereço de email</label>
+                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+            </div>
+
+            <!-- Descricao -> Messagem que o usuario quiser enviar-me -->
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea class="form-control" id="descricao" rows="3" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" onclick="EnviarEmail();">Enviar</button>
+            <!-- <div class="alert alert-success" role="alert" id="envMail">Email Enviado com sucesso</div> -->
+            <script>
+                //Função para falso alert de envio de email.
+                function EnviarEmail() {
+                    alert('Email enviado com sucesso!');
+                }
+            </script>
+        </div>
+        <!-- Link para voltar a Index -->
+        <a href="index.html">Home</a>
+</body>
+
+</html>
